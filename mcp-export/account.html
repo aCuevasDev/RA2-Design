@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Manage your personal account.">
+    <title>Brand — My Account</title>
+    <link rel="stylesheet" href="../css/global_variables.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body data-page="account">
+    <header class="site-header site-header--account">
+      <a class="brand" href="index.html" aria-label="Brand home">
+        <img class="brand__mark" src="assets/accountPrintersMark.svg" alt="">
+        <span class="brand__name">BRAND</span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html">LOREM IPSUM</a>
+        <a href="signup.html">DOLOR SIT AMET</a>
+        <a href="account.html">CONSECTETUR ADIPISCING</a>
+      </nav>
+      <button class="menu-toggle menu-toggle--account" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <img class="menu-toggle__default" src="assets/accountHamburger.svg" alt="">
+        <img class="menu-toggle__hover" src="assets/accountHamburgerHover.svg" alt="">
+      </button>
+    </header>
+
+    <main class="page page--account">
+      <div class="account-layout">
+        <aside class="profile-sidebar">
+          <div class="profile-portrait" aria-hidden="true">
+            <div class="profile-portrait__masked">
+              <img src="assets/accountGroup1.svg" alt="">
+            </div>
+          </div>
+          <div class="profile-identity">
+            <h1>María García</h1>
+            <p>@maria.garcia</p>
+          </div>
+        </aside>
+
+        <section class="account-details" aria-labelledby="account-title">
+          <header class="account-heading">
+            <h2 id="account-title">My Account</h2>
+            <p>Manage your personal account from here.</p>
+          </header>
+          <div class="account-divider" aria-hidden="true"></div>
+
+          <form class="account-form" id="account-form">
+            <label class="field">
+              <span>Full name</span>
+              <input name="name" type="text" value="María García" autocomplete="name">
+            </label>
+            <label class="field">
+              <span>Email address</span>
+              <input name="email" type="email" value="maria.garcia@example.com" autocomplete="email">
+            </label>
+            <label class="field">
+              <span>Phone</span>
+              <input name="phone" type="tel" value="+34 600 123 456" autocomplete="tel">
+            </label>
+            <label class="field">
+              <span>Address</span>
+              <input name="address" type="text" value="Calle de la Editorial, 12, Madrid" autocomplete="street-address">
+            </label>
+
+            <section class="preferences" aria-labelledby="preferences-title">
+              <h3 id="preferences-title">Preferencias</h3>
+              <div class="preferences__row">
+                <label class="preference">
+                  <input type="checkbox" checked>
+                  <span class="preference__copy">
+                    <strong>NOTIFICACIONES</strong>
+                    <span>Recibir correos electrónicos sobre actualizaciones de la cuenta.</span>
+                  </span>
+                </label>
+                <div class="preference__copy">
+                  <strong>PRIVACIDAD</strong>
+                  <span>Tus datos están protegidos según nuestra política de privacidad.</span>
+                </div>
+              </div>
+              <button class="button" type="submit">SAVE CHANGES</button>
+              <p class="form-message" id="account-message" role="status" aria-live="polite"></p>
+            </section>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Create your account.">
+    <title>Brand — Sign up</title>
+    <link rel="stylesheet" href="../css/global_variables.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body data-page="signup">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Brand home">
+        <img class="brand__mark" src="assets/signupPrintersMark.svg" alt="">
+        <span class="brand__name">BRAND</span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html">LOREM IPSUM</a>
+        <a href="signup.html">DOLOR SIT AMET</a>
+        <a href="account.html">CONSECTETUR ADIPISCING</a>
+      </nav>
+      <a class="button button--header" href="#signup-form">SIGN UP</a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main class="page page--signup">
+      <section class="intro" aria-labelledby="hero-title">
+        <h1 class="hero-title" id="hero-title">Hero Title</h1>
+        <p class="intro__copy">
+          Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief, and freedom, either alone or in community with others and in public or private, to manifest his religion or belief in teaching, practice, worship and observance.
+        </p>
+      </section>
+
+      <form class="signup-form" id="signup-form">
+        <h2>Sign up</h2>
+        <div class="signup-form__fields">
+          <div class="signup-form__row signup-form__row--split">
+            <label class="field">
+              <span>Full name</span>
+              <input name="name" type="text" placeholder="Please insert your name..." autocomplete="name" required>
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input name="email" type="email" placeholder="name@example.com" autocomplete="email" required>
+            </label>
+          </div>
+          <div class="signup-form__row">
+            <label class="field">
+              <span>Phone</span>
+              <input name="phone" type="tel" placeholder="+34 657 84 22 68" autocomplete="tel">
+            </label>
+          </div>
+          <div class="signup-form__row signup-form__row--passwords">
+            <label class="field">
+              <span>Password</span>
+              <input name="password" type="password" placeholder="Insert Password..." autocomplete="new-password" required>
+            </label>
+            <label class="field">
+              <span>Confirm Password</span>
+              <input name="confirm-password" type="password" placeholder="Confirm Password" autocomplete="new-password" required>
+            </label>
+          </div>
+        </div>
+        <div class="signup-form__actions">
+          <button class="button" type="submit">SIGN UP</button>
+          <p>Upon signing up you accept our privacy policy.</p>
+        </div>
+        <p class="form-message" id="signup-message" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="featured-art featured-art--signup" aria-hidden="true">
+        <svg class="featured-art__orbit" viewBox="0 0 560 560">
+          <defs>
+            <path id="signup-orbit-outer" d="M280 12a268 268 0 1 1-.1 0"></path>
+            <path id="signup-orbit-inner" d="M280 30a250 250 0 1 0 .1 0"></path>
+          </defs>
+          <text><textPath href="#signup-orbit-outer">Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief, and freedom, either alone or in community with others. </textPath></text>
+          <text><textPath href="#signup-orbit-inner">Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief, and freedom, either alone or in community with others. </textPath></text>
+        </svg>
+        <div class="featured-art__clip">
+          <div class="featured-art__masked">
+            <img class="featured-art__image" src="assets/signupGroup1.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

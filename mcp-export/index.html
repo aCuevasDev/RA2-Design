@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A small gallery of editorial illustrations.">
+    <title>Brand — Home</title>
+    <link rel="stylesheet" href="../css/global_variables.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Brand home">
+        <img class="brand__mark" src="assets/imgPrintersMark.svg" alt="">
+        <span class="brand__name">BRAND</span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html">LOREM IPSUM</a>
+        <a href="signup.html">DOLOR SIT AMET</a>
+        <a href="account.html">CONSECTETUR ADIPISCING</a>
+      </nav>
+      <a class="button button--header" href="signup.html">SIGN UP</a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main class="page page--home">
+      <section class="intro" aria-labelledby="hero-title">
+        <h1 class="hero-title" id="hero-title">Hero Title</h1>
+        <p class="intro__copy">
+          Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief, and freedom, either alone or in community with others and in public or private, to manifest his religion or belief in teaching, practice, worship and observance.
+        </p>
+      </section>
+
+      <section class="gallery" aria-label="Illustration gallery">
+        <div class="gallery__row">
+          <figure class="gallery-card">
+            <div class="artwork" data-art="sunrise" aria-hidden="true"></div>
+            <figcaption><span>LOREM IPSUM</span><span>Dolor sit amet</span></figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <div class="artwork" data-art="arcade" aria-hidden="true"></div>
+            <figcaption><span>LOREM IPSUM</span><span>Dolor sit amet</span></figcaption>
+          </figure>
+        </div>
+        <div class="gallery__divider" aria-hidden="true"></div>
+        <div class="gallery__row">
+          <figure class="gallery-card">
+            <div class="artwork" data-art="waves" aria-hidden="true"></div>
+            <figcaption><span>LOREM IPSUM</span><span>Dolor sit amet</span></figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <div class="artwork" data-art="concentric" aria-hidden="true"></div>
+            <figcaption><span>LOREM IPSUM</span><span>Dolor sit amet</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <div class="featured-art featured-art--home" aria-hidden="true">
+        <svg class="featured-art__orbit" viewBox="0 0 560 560">
+          <defs>
+            <path id="home-orbit-outer" d="M280 12a268 268 0 1 1-.1 0"></path>
+            <path id="home-orbit-inner" d="M280 30a250 250 0 1 0 .1 0"></path>
+          </defs>
+          <text><textPath href="#home-orbit-outer">Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief, and freedom, either alone or in community with others. </textPath></text>
+          <text><textPath href="#home-orbit-inner">Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief, and freedom, either alone or in community with others. </textPath></text>
+        </svg>
+        <div class="featured-art__clip">
+          <div class="featured-art__masked">
+            <img class="featured-art__image" src="assets/imgGroup1.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
