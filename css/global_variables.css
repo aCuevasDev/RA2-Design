@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Instrument+Serif&family=Inter:wght@300;400;600&display=swap");
+
+:root {
+  /* #Colors */
+  --primary-color: #a8503a;
+  --secondary-color: #8a3f2d;
+  --background-color: #f2efe8;
+  --card-background-color: #faf9f6;
+  --accent-color: #667e5b;
+  --accent-text-color: #ffffff;
+  --main-text-color: #1f1b18;
+  --secondary-text-color: #6b675f;
+
+  /* #Fonts */
+  --primary-font: "Instrument Serif";
+  --body-font: "Inter";
+  --interactive-font: "Geist Mono";
+  --line-spacing: 120%;
+  --text-hero: 96px;
+  --text-medium: 20px;
+  --text-sm: 12px;
+
+  /* #Spacing */
+  --gutter-gap: 64px;
+  --default-margin: 4px;
+  --big-margin: 8px;
+  --default-padding: 4px;
+  --big-margin: 8px;
+}
